@@ -1,0 +1,10 @@
+:root {
+  /* colors  */
+  --success: #24a014;
+  --primary: #fe5d42;
+  --hover-bg: #fe5e4288;
+  --white: #fff;
+  --border-color: #e2e2e2;
+  /* sizes  */
+  --border-radius: 8px;
+}
