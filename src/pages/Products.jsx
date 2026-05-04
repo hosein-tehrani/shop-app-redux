@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-
 import { fetchProducts } from "../features/product/productSlice";
-// import { useProducts } from "../context/ProductsContext";
 import {
   filterProducts,
   searchProducts,
@@ -17,7 +15,6 @@ import ProductCard from "../components/ProductCard";
 import styles from "./Products.module.css";
 
 function Products() {
-  // const products = useProducts()
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
   const [displayed, setDisplayed] = useState([]);
@@ -29,6 +26,17 @@ function Products() {
   useEffect(() => {
     setDisplayed(products);
     const query = {};
+    const category = searchParams.get("category");
+    const search = searchParams.get("search");
+    if (category) {
+      query.category = category;
+      setCategory(category);
+    }
+    if (search) {
+      query.search = search;
+      setSearch(search);
+    }
+    setQuery(query);
   }, [products]);
   useEffect(() => {
     dispatch(fetchProducts());
@@ -49,14 +57,14 @@ function Products() {
   };
   return (
     <>
-      <div className="search">
+      <div className={styles.searchBox}>
         <input
           type="text"
-          placeholder="search..."
           value={search}
-          onChange={(e) => setSearch(e.target.value.toLowerCase().trim())}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="search..."
         />
-        <button onClick={searchHandler}>
+        <button onClick={() => searchHandler}>
           <ImSearch />
         </button>
       </div>
