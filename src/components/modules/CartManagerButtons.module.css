@@ -1,0 +1,30 @@
+.actions {
+  width: 100%;
+  max-width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #eaeaea;
+  border-radius: var(--border-radius);
+}
+.actions .buyText {
+  width: 100%;
+  margin-left: 5px;
+  font-size: 0.9rem;
+}
+.actions button {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  height: 45px;
+  line-height: 45px;
+  width: 45px;
+  padding: 8px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

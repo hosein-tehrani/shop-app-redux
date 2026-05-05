@@ -55,24 +55,3 @@
   color: var(--primary);
   cursor: pointer;
 }
-.actions div {
-  display: flex;
-  align-items: center;
-}
-.actions div span {
-  width: 20px;
-  text-align: center;
-  margin: 0 10px;
-}
-.actions div button {
-  background-color: var(--primary);
-  color: #fff;
-  border: none;
-  font-size: 1.7rem;
-  height: 32px;
-  width: 32px;
-  line-height: 32px;
-  padding: 2px;
-  border-radius: 8px;
-  cursor: pointer;
-}
