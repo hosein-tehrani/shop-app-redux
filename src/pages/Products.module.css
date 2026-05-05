@@ -33,3 +33,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .searchBox {
+    width: 80%;
+  }
+}

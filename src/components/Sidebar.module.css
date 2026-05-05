@@ -45,3 +45,23 @@
   margin-right: 10px;
   color: var(--primary);
 }
+@media screen and (max-width: 450px) {
+  .sidebar {
+    margin-top: 10px;
+    width: 100%;
+
+    border: 2px dashed var(--border-color);
+    padding: 15px;
+    border-radius: var(--border-radius);
+  }
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+  }
+  .sidebar li {
+    border: 1px solid var(--border-color);
+    margin: 10px;
+    min-width: 150px;
+  }
+}
