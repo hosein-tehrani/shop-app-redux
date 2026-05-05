@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container .imageBox {
+  flex: 0 0 50%;
+  overflow: hidden;
+}
+.container .image {
+  width: 100%;
+  border-radius: var(--border-radius);
+  border: 1px dashed var(--primary);
+  height: fit-content;
+}
+.container .title {
+  display: flex;
+  justify-content: space-between;
+}
+.container .info {
+  min-width: 300px;
+  flex: 0 0 45%;
+  margin: 10px;
+  border: 1px dashed var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  height: fit-content;
+}
+
+.container .info h1 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.container .info h2 {
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 15px;
+}
+.container .info h3 {
+  margin: 20px 0;
+  border-bottom: 3px solid var(--primary);
+  width: fit-content;
+  padding-bottom: 5px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons svg {
+  cursor: pointer;
+}
+
+.content {
+  line-height: 2.5rem;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.category,
+.price {
+  font-size: 1.3rem;
+  align-items: center;
+  margin: 50px 0;
+}
+.category svg,
+.price svg {
+  color: var(--primary);
+}
+.category {
+  margin-bottom: 15px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 650px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}
