@@ -6,6 +6,7 @@ import DetailsPage from "./pages/DetailsPage";
 import ProductProvider from "./context/ProductsContext";
 import CartProvider from "./context/CartContext";
 import Layout from "./layout/Layout";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/product/:id" element={<DetailsPage />} />
                 <Route path="*" element={<PageNotFound />} />
               </Routes>
+              <Toaster />
             </Layout>
           </BrowserRouter>
         </ProductProvider>

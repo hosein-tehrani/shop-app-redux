@@ -1,8 +1,8 @@
 :root {
   /* colors  */
   --success: #24a014;
-  --primary: #fe5d42;
-  --hover-bg: #fe5e4288;
+  --primary: rgb(238, 56, 78);
+  --hover-bg: rgba(238, 56, 77, 0.548);
   --white: #fff;
   --border-color: #e2e2e2;
   /* sizes  */

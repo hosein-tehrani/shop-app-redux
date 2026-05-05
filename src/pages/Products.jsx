@@ -9,7 +9,7 @@ import { useSearchParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 import { ImSearch } from "react-icons/im";
-import Loader from "../components/Loader";
+import Loader from "../components/modules/Loader";
 import Sidebar from "../components/Sidebar";
 import ProductCard from "../components/ProductCard";
 import styles from "./Products.module.css";
