@@ -1,0 +1,24 @@
+.sidebar {
+  border: 1px dotted var(--primary);
+  border-radius: var(--border-radius);
+  height: fit-content;
+  padding: 10px;
+  width: 250px;
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+.sidebar span {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.sidebar div {
+  display: flex;
+  align-items: center;
+}
+.sidebar button {
+  margin-top: 15px;
+  width: 100%;
+}

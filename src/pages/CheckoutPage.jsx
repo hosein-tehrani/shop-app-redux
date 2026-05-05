@@ -1,11 +1,28 @@
-// import { useSearchParams } from "react-router-dom"
+import styles from "./CheckoutPage.module.css";
+
+import { useSelector } from "react-redux";
+import CheckoutSidebar from "../components/CheckoutSidebar";
+import CheckoutProductCard from "../components/CheckoutProductCard";
 
 function CheckoutPage() {
-
+  const cart = useSelector((store) => store.cart);
   return (
     <>
-      <h1>Checkout page</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque quos at numquam, a similique praesentium nisi autem magnam ipsum quia natus doloribus impedit fugiat sequi, molestiae fuga saepe. Saepe, quasi?</p>
+      <div className={styles.container}>
+        <CheckoutSidebar cart={cart} />
+        <div className={styles.main}>
+          {cart.selectedProducts.length ? (
+            cart.selectedProducts.map((item) => (
+              <CheckoutProductCard key={item.id} product={item} />
+            ))
+          ) : (
+            <div className={styles.empty}>
+              <img src="emptyCart.png" alt="emptyCart" />
+              <div>Your cart is empty!</div>
+            </div>
+          )}
+        </div>
+      </div>
     </>
   );
 }

@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+.main {
+  width: 100%;
+  margin: 0 15px;
+}
+.empty {
+  text-align: center;
+  border: 1px dotted var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1.2rem;
+  padding: 10px;
+}
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+  }
+}
