@@ -2,7 +2,8 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-<img width="1894" height="901" alt="image" src="https://github.com/user-attachments/assets/1639aa79-9b4e-48c8-8142-ba1c0d7be5d4" />
-<img width="1896" height="896" alt="image" src="https://github.com/user-attachments/assets/95fd5ee8-1cc7-4733-b8fe-e15820a2364a" />
-<img width="1883" height="901" alt="image" src="https://github.com/user-attachments/assets/a08f37f6-cb58-4aea-b00d-a31a47198cb1" />
+<img width="1897" height="885" alt="image" src="https://github.com/user-attachments/assets/19802065-9fd7-4d94-a124-900054cbf3b3" />
+<img width="1893" height="902" alt="image" src="https://github.com/user-attachments/assets/1ffea3f9-8c8d-4fca-8670-4cc46c7069ff" />
+<img width="1898" height="767" alt="image" src="https://github.com/user-attachments/assets/d7d5615a-e075-435c-87ff-19a353e99f68" />
+
 
